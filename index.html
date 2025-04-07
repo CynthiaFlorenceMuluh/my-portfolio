@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>My Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @media(max-width:10000px){
+            body{
+                background-color: #fdfdfd;
+            }
+            .portfolio-pic{
+                width: 150px;
+                height:150px;
+                border-radius: 50%;
+                object-fit:cover;
+                border:2px solid #ccc;
+                margin-bottom: 1rem;
+            }
+            nav{
+                display: flex;
+                
+                 justify-content:space-between;
+                align-items: center;
+                text-decoration: none;
+                
+                
+
+            }
+            nav ul {
+                
+                display: flex;
+                gap:20px;
+                list-style:none;
+                flex-wrap: wrap;
+                
+            }
+            nav ul a{
+                text-decoration: none;
+                font-size: 2.0rem;
+                padding:10px 20px;
+                background-color:wheat;
+                border-color: black;
+                border-radius: 10px;
+
+                
+            
+            }
+            .about{
+                text-align: center;
+                background-color:aliceblue;
+                height: 200px;
+                align-items: center;
+                font-size: 1.5rem;
+
+
+            }
+            .educa{
+                align-items: center;
+                font-size: 1.5rem;
+                background-color: #F5A623;
+
+
+            } 
+
+            
+        }
+    </style>
+    </head>
+    <body>
+        <herder>
+        <img src="cynthia.jpg" alt="cynthia" class="Portfolio-pic">
+        <h1>Hi, I'm Cynthia Florence Muluh</h1>
+        <p>Computer Science student|aspiring Tech enthusiast</p>
+        <nav>
+            <ul>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Education.html">Education</a> </li>
+                <li><a href="Project.html">Project</a> </li>
+                <li> <a href="blog.html">Blog</a> </li>
+                <li><a href="Contact.html">Contact</a> </li>
+            </ul>
+        </nav>
+        </herder>
+        <section><div class="about">
+            <h2>About Me</h2>
+            <p>I'm a passionate computer science student at the University of Buea. I love
+                programming and creating beautiful, user-friendly designs.
+            </p></div>
+        </section>
+        <section id="educa">
+            <div class="educa">
+            <h2>Education</h2>
+            <div class="level"><strong>OL certification</strong><br>
+                I completed my ordinary level in 2022 at Government Bilingual Secondary School Ngaoundal.
+                
+            </div>
+            <div class="level">
+              <strong>AL certification.</strong><br>
+                I completed my Advance level in 2024 at Mazenod Bilingual college Ngaoundere.
+            </div>
+            <div class="level"><strong>University of Buea</strong><br>Bachelor's Degree in computer Science(ongoing)
+            . Minoring in mathematics, i am gaining strong analytical problem-solving skill to complement my programming expertise. </div>
+            <div><p>I have certificate on coursera platform on the following:</p>
+            <ol>
+                <li>Job Success:Get Hired or Promoted in 3 Steps</li>
+                <li>Designing and Formatting a Presentation on Powerpoint</li>
+                <li>Google drive</li>
+                <li>Code Yourself! An introduction to Programming</li>
+            </ol></div>
+            </div>
+        </section>
+        <section id="project">
+
+            <h2>Projects</h2>
+            <div  class="project">
+                <h3>Restuarant website</h3>
+                <p>A responsive restuarant website built with HTML,CSS and JS.This project showcase my abilityto design and develope
+                    an Elegantand efficient online ordering experience.
+                     </p>
+            </div>
+            <div class="project">
+                <h3>Stressfree Website</h3>
+                <p>Design to help students access past exam papers with ease,this projects demonstrate my commitment to using technology
+                    fo education growth.
+                </p>
+            </div>
+        </section>
+        <section id="blog">
+            <h2>Blog</h2>
+            <p>I equaly wrote some articles on medium on the following</p>
+            <ol>
+                <li>What is Programming Paradigm</li>
+                <li>Undestanding Database Normalization and why it matters and how to do it</li>
+                <li>What is datastructures</li>
+                <li>Diving into C programming</li>
+            </ol>
+            
+            <a href="https://medium.com/@Cynthia Florence Muluh" target="_blank">My blog on medium</a>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Phone: +237650148156</p>
+            <p>Email: <a href="civy2252@gmail.com" target="_blank">civy2522@gmail.com</a></p>
+            <p>Github: <a href="https://github.com/CynthiaFlorenceMuluh" target="_blank" >github.com/CynthiaFlorenceMuluh</a></p>
+            <p>LinkIn:
+                <a href="https://www.linkedin.com/in/Cynthia-Florence" target="_blank">linkedin.com/Cynthia Florence</a>
+            </p>
+            <p>I'm open to collaborations,freelance projects,and tech discussions. let connect! </p>
+        </section>
+        <footer>
+            <p>&copy; 2025 Cynthia Florence Muluh</p>
+        </footer>
+        <script>
+            document.addEventListener("DOMcontentloader", function(){
+                const navlinks=document.querySelectorAll("nav ul li a");
+                navlinks.foreach(link=>{
+                    link.addEventListener("click",function(event){
+                        event.preventdefault();
+                        const section=document.querySelector(this.getAttribute("href"));
+                        section.scrollIntoview({behavior:"smooth"});
+                    });
+                });
+            
+            });
+        </script>
+    </body>
+</html>
